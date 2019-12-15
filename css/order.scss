@@ -166,6 +166,11 @@ $border: 1px solid $gray-text-color;
   .categories-menu {
     margin-bottom: 28px;
     button {
+      @include max-screen(446px) {
+        &:nth-child(2),&:nth-child(3) {
+          display: none;
+        }
+      }
       margin-right: 15px;
       padding: 14px 20px;
       @include max-screen(1200px) {

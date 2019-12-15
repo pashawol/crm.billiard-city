@@ -84,6 +84,9 @@
     .s-order .categories-menu button {
       margin-right: 15px;
       padding: 14px 20px; }
+      @media screen and (max-width: 446px) {
+        .s-order .categories-menu button:nth-child(2), .s-order .categories-menu button:nth-child(3) {
+          display: none; } }
       @media screen and (max-width: 1200px) {
         .s-order .categories-menu button {
           padding: 10px 12px; } }
