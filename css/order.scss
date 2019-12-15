@@ -133,6 +133,9 @@ $border: 1px solid $gray-text-color;
 
   .to-pay {
     margin: 0 20px 28px;
+    @include max-screen(469px) {
+      text-align: center;
+    }
     .btn-warning {
       padding: 11px 17px;
       @include max-screen(1199px) {

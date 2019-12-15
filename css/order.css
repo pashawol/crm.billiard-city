@@ -84,6 +84,9 @@
     font-weight: 600; }
   .s-order .to-pay {
     margin: 0 20px 28px; }
+    @media screen and (max-width: 469px) {
+      .s-order .to-pay {
+        text-align: center; } }
     .s-order .to-pay .btn-warning {
       padding: 11px 17px; }
       @media screen and (max-width: 1199px) {

@@ -1753,114 +1753,125 @@
       </aside>
       <div class="content-wrapper" style="min-height: 562px;">
         <!-- Верстка страницы заказа -->
-        <section class="content s-order">
-          <div class="container-fluid">
-            <div class="row flex-container">
-              <div class="col-lg-6 left-side-block">
-                <div class="order-number">
-                  <h1>Заказ № 5533</h1>
-                  <div class="table-responsive">
-                    <table class="table order-priсe" align="center">
+        <section class="content">
+          <div class="s-order">
+            <div class="container-fluid">
+              <div class="row flex-container">
+                <div class="col-lg-6 left-side-block">
+                  <div class="order-number">
+                    <h1>Заказ № 5533</h1>
+                    <div class="table-responsive">
+                      <table class="table order-priсe" align="center">
+                        <tr>
+                          <td>Наименование</td>
+                          <td>Кол-во</td>
+                          <td>Цена</td>
+                          <td>Итого</td>
+                        </tr>
+                        <tr>
+                          <td>Картошка-фри</td>
+                          <td>
+                            <div class="block-add"><button type="button"
+                                class="btn btn-warning btn-sm">-</button><span>2</span><button type="button"
+                                class="btn btn-warning btn-sm">+</button></div>
+                          </td>
+                          <td>30.00</td>
+                          <td>60.00</td>
+                        </tr>
+                        <tr>
+                          <td>Stella Artois 500 мл</td>
+                          <td>
+                            <div class="block-add"><button type="button"
+                                class="btn btn-warning btn-sm">-</button><span>3</span><button type="button"
+                                class="btn btn-warning btn-sm">+</button></div>
+                          </td>
+                          <td>3333.00</td>
+                          <td>9999.00</td>
+                        </tr>
+                        <tr>
+                          <td>Пиво розливное Stella Artois 300 мл</td>
+                          <td>
+                            <div class="block-add"><button type="button"
+                                class="btn btn-warning btn-sm">-</button><span>1</span><button type="button"
+                                class="btn btn-warning btn-sm">+</button></div>
+                          </td>
+                          <td>26.00</td>
+                          <td>26</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="total-order">
+                    <div class="textarea-wrapper">
+                      <textarea class="wishes-to-order"
+                        placeholder="Тут Вы можете написать пожилания к заказу"></textarea>
+                    </div>
+                    <table class="table order-final-priсe" align="center">
                       <tr>
-                        <td>Наименование</td>
-                        <td>Кол-во</td>
-                        <td>Цена</td>
                         <td>Итого</td>
+                        <td>188,00 ₴</td>
+                        <td>К оплтате</td>
                       </tr>
                       <tr>
-                        <td>Картошка-фри</td>
-                        <td><div class="block-add"><button type="button" class="btn btn-warning btn-sm">-</button><span>2</span><button
-                            type="button" class="btn btn-warning btn-sm">+</button></div></td>
-                        <td>30.00</td>
-                        <td>60.00</td>
-                      </tr>
-                      <tr>
-                        <td>Stella Artois 500 мл</td>
-                        <td><div class="block-add"><button type="button" class="btn btn-warning btn-sm">-</button><span>3</span><button
-                            type="button" class="btn btn-warning btn-sm">+</button></div></td>
-                        <td>3333.00</td>
-                        <td>9999.00</td>
-                      </tr>
-                      <tr>
-                        <td>Пиво розливное Stella Artois 300 мл</td>
-                        <td><div class="block-add"><button type="button" class="btn btn-warning btn-sm">-</button><span>1</span><button
-                            type="button" class="btn btn-warning btn-sm">+</button></div></td>
-                        <td>26.00</td>
-                        <td>26</td>
+                        <td>Скидка</td>
+                        <td>5%</td>
+                        <td class="total-price">869.60 ₴</td>
                       </tr>
                     </table>
+                    <div class="to-pay clearfix">
+                      <button type="button" class="pay-check"><img src="images/pay-button-1.png"></img></button>
+                      <button type="button" class="pay-check"><img src="images/pay-button-2.png"></img></button>
+                      <button type="button" class="pay-check"><img src="images/pay-button-3.png"></img></button>
+                      <button type="button" class="btn btn-warning pull-right">Оплатить</button>
+                    </div>
                   </div>
                 </div>
-                <div class="total-order">
-                  <div class="textarea-wrapper">
-                    <textarea class="wishes-to-order"
-                      placeholder="Тут Вы можете написать пожилания к заказу"></textarea>
+                <div class="col-lg-6 order-menu">
+                  <div class="categories-menu clearfix">
+                    <button type="button" class="btn btn-primary">Меню</button>
+                    <button type="button" class="btn btn-primary">Напитки</button>
+                    <button type="button" class="btn btn-primary">Безалкогольные</button>
+                    <button type="button" class="btn btn-warning pull-right"><img src="images/search-button.png"
+                        alt="infinite">
+                      <!--<i class="fa fa-search"></i> --> </button>
                   </div>
-                  <table class="table order-final-priсe" align="center">
-                    <tr>
-                      <td>Итого</td>
-                      <td>188,00 ₴</td>
-                      <td>К оплтате</td>
-                    </tr>
-                    <tr>
-                      <td>Скидка</td>
-                      <td>5%</td>
-                      <td class="total-price">869.60 ₴</td>
-                    </tr>
-                  </table>
-                  <div class="to-pay clearfix">
-                    <button type="button" class="pay-check"><img src="images/pay-button-1.png"></img></button>
-                    <button type="button" class="pay-check"><img src="images/pay-button-2.png"></img></button>
-                    <button type="button" class="pay-check"><img src="images/pay-button-3.png"></img></button>
-                    <button type="button" class="btn btn-warning pull-right">Оплатить</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 order-menu">
-                <div class="categories-menu clearfix">
-                  <button type="button" class="btn btn-primary">Меню</button>
-                  <button type="button" class="btn btn-primary">Напитки</button>
-                  <button type="button" class="btn btn-primary">Безалкогольные</button>
-                  <button type="button" class="btn btn-warning pull-right"><img src="images/search-button.png"
-                      alt="infinite">
-                    <!--<i class="fa fa-search"></i> --> </button>
-                </div>
-                <div class="right-site-block">
-                  <div class="position-item">
-                    <p>Холодные напитки</p>
-                    <img src="images/cold-lemonade.jpg" alt="infinite">
-                  </div>
-                  <div class="position-item">
-                    <p>Холодные напитки</p>
-                    <img src="images/cold-lemonade.jpg" alt="infinite">
-                  </div>
-                  <div class="position-item">
-                    <p>Холодные напитки</p>
-                    <img src="images/cold-lemonade.jpg" alt="infinite">
-                  </div>
-                  <div class="position-item">
-                    <p>Холодные напитки</p>
-                    <img src="images/cold-lemonade.jpg" alt="infinite">
-                  </div>
-                  <div class="position-item">
-                    <p>Холодные напитки</p>
-                    <img src="images/cold-lemonade.jpg" alt="infinite">
-                  </div>
-                  <div class="position-item">
-                    <p>Холодные напитки</p>
-                    <img src="images/cold-lemonade.jpg" alt="infinite">
-                  </div>
-                  <div class="position-item">
-                    <p>Холодные напитки</p>
-                    <img src="images/cold-lemonade.jpg" alt="infinite">
-                  </div>
-                  <div class="position-item">
-                    <p>Холодные напитки</p>
-                    <img src="images/cold-lemonade.jpg" alt="infinite">
-                  </div>
-                  <div class="position-item">
-                    <p>Холодные напитки</p>
-                    <img src="images/cold-lemonade.jpg" alt="infinite">
+                  <div class="right-site-block">
+                    <div class="position-item">
+                      <p>Холодные напитки</p>
+                      <img src="images/cold-lemonade.jpg" alt="infinite">
+                    </div>
+                    <div class="position-item">
+                      <p>Холодные напитки</p>
+                      <img src="images/cold-lemonade.jpg" alt="infinite">
+                    </div>
+                    <div class="position-item">
+                      <p>Холодные напитки</p>
+                      <img src="images/cold-lemonade.jpg" alt="infinite">
+                    </div>
+                    <div class="position-item">
+                      <p>Холодные напитки</p>
+                      <img src="images/cold-lemonade.jpg" alt="infinite">
+                    </div>
+                    <div class="position-item">
+                      <p>Холодные напитки</p>
+                      <img src="images/cold-lemonade.jpg" alt="infinite">
+                    </div>
+                    <div class="position-item">
+                      <p>Холодные напитки</p>
+                      <img src="images/cold-lemonade.jpg" alt="infinite">
+                    </div>
+                    <div class="position-item">
+                      <p>Холодные напитки</p>
+                      <img src="images/cold-lemonade.jpg" alt="infinite">
+                    </div>
+                    <div class="position-item">
+                      <p>Холодные напитки</p>
+                      <img src="images/cold-lemonade.jpg" alt="infinite">
+                    </div>
+                    <div class="position-item">
+                      <p>Холодные напитки</p>
+                      <img src="images/cold-lemonade.jpg" alt="infinite">
+                    </div>
                   </div>
                 </div>
               </div>
