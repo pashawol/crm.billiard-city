@@ -1,5 +1,6 @@
 $gray-text-color: #c3c3c3;
 $blue-color: #3c8dbc;
+$hover-blue-color: #367fa9;
 $orange-color: #ec971f;
 $border-radius: 4px;
 $border: 1px solid $gray-text-color;
@@ -40,14 +41,17 @@ $border: 1px solid $gray-text-color;
     width: 100%;
     margin-bottom: 29px;
   }
-  .wishes-to-order {
-    margin: 28px 20px;
-    padding: 9px;
-    width: 92%;
-    height: 100px;
-    resize: none;
-    border-radius: $border-radius;
-    border: $border;
+  .textarea-wrapper {
+    padding: 28px 20px;
+    .wishes-to-order {
+      // margin: 28px 20px;
+      padding: 9px;
+      width: 100%;
+      height: 100px;
+      resize: none;
+      border-radius: $border-radius;
+      border: $border;
+    }
   }
   .left-side-block {
     // min-width: 510px;
@@ -78,12 +82,15 @@ $border: 1px solid $gray-text-color;
           width: 20%;
           text-align: center;
         }
+        &:nth-child(2) {
+          width: 91px;
+        }
         &:nth-last-of-type(1) {
           text-align: right;
           padding-right: 19px;
         }
         span {
-          padding: 0 14px;
+          padding: 0 10px;
           @include max-screen(1200px) {
             padding: 0 3px;
           }
@@ -120,6 +127,11 @@ $border: 1px solid $gray-text-color;
     margin: 0 20px 28px;
     .btn-warning {
       padding: 11px 17px;
+      @include max-screen(1090px) {
+        float: none !important;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
   .pay-check {
@@ -131,12 +143,13 @@ $border: 1px solid $gray-text-color;
     padding: 8px 20px;
     font-size: 13px;
     margin-right: 26px;
+    margin-bottom: 15px;
     @include max-screen(1200px) {
       margin-right: 10px;
     }
-    &:nth-child(3) {
-      margin-right: 0;
-    }
+    // &:nth-child(3) {
+    //   margin-right: 0;
+    // }
     // i.fa {
     //   position: absolute;
     //   z-index: 2;
@@ -157,19 +170,26 @@ $border: 1px solid $gray-text-color;
     // }
   }
 
-  .btn-primary {
-    background-color: $blue-color;
-  }
+  
   // .order-menu {
   //   .fa-search {
   //     font-size: 28px;
   //   }
   // }
   .categories-menu {
-    margin-bottom: 28px;
+    margin-bottom: 18px;
+    .btn-primary {
+      background-color: $blue-color;
+      &:hover {
+        background-color: $hover-blue-color;
+        // transition: all 0.3s;
+      }
+    }
     button {
+      margin-bottom: 10px;
       @include max-screen(446px) {
-        &:nth-child(2),&:nth-child(3) {
+        &:nth-child(2),
+        &:nth-child(3) {
           display: none;
         }
       }
@@ -177,13 +197,13 @@ $border: 1px solid $gray-text-color;
       margin-right: 15px;
       padding: 14px 20px;
       @include max-screen(1200px) {
-        padding: 10px 12px;
+        padding: 8px 10px;
       }
       &:nth-last-child(1) {
         margin-right: 0;
         padding: 9px;
         @include max-screen(1200px) {
-          padding: 6px;
+          padding: 4px;
         }
       }
     }
@@ -194,7 +214,9 @@ $border: 1px solid $gray-text-color;
     justify-content: space-between;
   }
   .position-item {
-    max-width: 167px;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100%/3 - 10px);
     // flex-shrink: 0;
     // margin-right: 19px;
     // &:nth-child(3n+3) {
