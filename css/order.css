@@ -1,0 +1,101 @@
+@charset "UTF-8";
+.s-order h1 {
+  padding-left: 21px;
+  margin-bottom: 50px; }
+
+.s-order .total-order,
+.s-order .order-number {
+  background-color: #fff;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 29px; }
+
+.s-order .wishes-to-order {
+  margin: 28px 20px;
+  padding: 9px;
+  border-radius: 3px;
+  width: 92%;
+  height: 100px;
+  resize: none; }
+
+.s-order .order-priсe .btn-warning {
+  padding: 0 8px; }
+
+.s-order .order-priсe tr {
+  border-top: solid 1px #808080;
+  border-bottom: solid 1px #808080; }
+  .s-order .order-priсe tr:nth-child(1) {
+    border-top: none;
+    font-weight: 600; }
+  .s-order .order-priсe tr:nth-last-of-type(1) {
+    border-bottom: none; }
+  .s-order .order-priсe tr td {
+    vertical-align: middle; }
+    .s-order .order-priсe tr td:nth-child(1) {
+      padding-left: 19px; }
+    .s-order .order-priсe tr td:nth-child(2), .s-order .order-priсe tr td:nth-child(3) {
+      width: 20%;
+      text-align: center; }
+    .s-order .order-priсe tr td:nth-last-of-type(1) {
+      text-align: right;
+      padding-right: 19px; }
+    .s-order .order-priсe tr td span {
+      padding: 0 14px; }
+
+.s-order .order-final-priсe tr {
+  padding: 7px 19px; }
+  .s-order .order-final-priсe tr:nth-child(2) {
+    vertical-align: bottom; }
+  .s-order .order-final-priсe tr td:nth-child(1) {
+    padding-left: 19px; }
+  .s-order .order-final-priсe tr td:nth-child(2) {
+    text-align: center; }
+  .s-order .order-final-priсe tr td:nth-child(3) {
+    text-align-last: right;
+    padding-right: 19px; }
+
+.s-order .order-final-priсe .total-price {
+  font-size: 18px;
+  font-weight: 600; }
+
+.s-order .to-pay {
+  margin: 0 20px 28px; }
+  .s-order .to-pay .btn-warning {
+    padding: 11px 17px; }
+
+.s-order .pay-check {
+  border: solid 1px #3c8dbc;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 13px;
+  margin-right: 26px; }
+  .s-order .pay-check:nth-child(3) {
+    margin-right: 0; }
+
+.s-order .btn-primary {
+  background-color: #3c8dbc; }
+
+.s-order .order-menu .fa-search {
+  font-size: 20px; }
+
+.s-order .categories-menu {
+  margin-bottom: 28px; }
+  .s-order .categories-menu button {
+    margin-right: 15px; }
+    .s-order .categories-menu button:nth-last-child(1) {
+      margin-right: 0; }
+
+.s-order .specific-position {
+  display: inline-block; }
+  .s-order .specific-position .position-item {
+    display: inline-block !important;
+    margin-bottom: 28px;
+    background-color: #fff;
+    border: solid 1px #808080;
+    border-radius: 4px; }
+    .s-order .specific-position .position-item p {
+      text-align: center;
+      margin-top: 7px; }
