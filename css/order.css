@@ -60,6 +60,10 @@
         @media screen and (max-width: 1200px) {
           .s-order .order-priсe tr td span {
             padding: 0 3px; } }
+  .s-order .block-add {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .s-order .order-final-priсe tr {
     padding: 7px 19px; }
     .s-order .order-final-priсe tr:nth-child(1) {
@@ -82,7 +86,7 @@
     margin: 0 20px 28px; }
     .s-order .to-pay .btn-warning {
       padding: 11px 17px; }
-      @media screen and (max-width: 1090px) {
+      @media screen and (max-width: 1199px) {
         .s-order .to-pay .btn-warning {
           float: none !important;
           margin-left: auto;
@@ -139,14 +143,15 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    max-width: calc(100%/3 - 10px);
+    min-width: 120px;
+    width: calc(100%/3 - 10px);
     margin-bottom: 28px;
     background-color: #fff;
     border: 1px solid #c3c3c3;
     border-radius: 4px; }
     @media screen and (max-width: 992px) {
       .s-order .position-item {
-        max-width: calc(100%/2 - 10px); } }
+        width: calc(100%/2 - 10px); } }
     .s-order .position-item p {
       text-align: center;
       padding-top: 7px;

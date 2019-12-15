@@ -53,9 +53,6 @@ $border: 1px solid $gray-text-color;
       border: $border;
     }
   }
-  .left-side-block {
-    // min-width: 510px;
-  }
   .order-priсe {
     .btn-warning {
       padding: 0 8px;
@@ -99,6 +96,12 @@ $border: 1px solid $gray-text-color;
       }
     }
   }
+  .block-add {
+    display: flex;
+    input {
+
+    }
+  }
   .order-final-priсe {
     tr {
       padding: 7px 19px;
@@ -132,7 +135,7 @@ $border: 1px solid $gray-text-color;
     margin: 0 20px 28px;
     .btn-warning {
       padding: 11px 17px;
-      @include max-screen(1090px) {
+      @include max-screen(1199px) {
         float: none !important;
         margin-left: auto;
         margin-right: auto;
@@ -221,16 +224,12 @@ $border: 1px solid $gray-text-color;
   .position-item {
     display: flex;
     flex-direction: column;
-    max-width: calc(100%/3 - 10px);
+    // margin-right: 10px;
+    min-width: 120px;
+    width: calc(100%/3 - 10px);
     @include max-screen(992px) {
-      max-width: calc(100%/2 - 10px);
+      width: calc(100%/2 - 10px);
     }
-    // flex-shrink: 0;
-    // margin-right: 19px;
-    // &:nth-child(3n+3) {
-    //   margin-right: 0;
-    // }
-    // display: inline-block;
     margin-bottom: 28px;
     background-color: #fff;
     border: $border;
