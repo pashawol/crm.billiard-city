@@ -1,7 +1,8 @@
-$gray-text-color: #808080;
+$gray-text-color: #c3c3c3;
 $blue-color: #3c8dbc;
 $orange-color: #ec971f;
 $border-radius: 4px;
+$border: 1px solid $gray-text-color;
 
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
@@ -15,6 +16,7 @@ $border-radius: 4px;
 }
 
 .s-order {
+  max-width: 1148px;
   // .flex-container {
   //   display: flex;
   //   @media (max-width: @screen-xs-max) {
@@ -31,7 +33,7 @@ $border-radius: 4px;
   .total-order,
   .order-number {
     background-color: #fff;
-    border: 1px solid $gray-text-color;
+    border: $border;
     border-radius: $border-radius;
     width: 100%;
     margin-bottom: 29px;
@@ -39,10 +41,14 @@ $border-radius: 4px;
   .wishes-to-order {
     margin: 28px 20px;
     padding: 9px;
-    border-radius: 3px;
     width: 92%;
     height: 100px;
     resize: none;
+    border-radius: $border-radius;
+    border: $border;
+  }
+  .left-side-block {
+    // min-width: 510px;
   }
   .order-priсe {
     .btn-warning {
@@ -51,8 +57,8 @@ $border-radius: 4px;
     tr {
       // padding: 7px 19px;
       // text-align: center;
-      border-top: solid 1px $gray-text-color;
-      border-bottom: solid 1px $gray-text-color;
+      border-top: $border;
+      border-bottom: $border;
       &:nth-child(1) {
         border-top: none;
         font-weight: 600;
@@ -76,6 +82,9 @@ $border-radius: 4px;
         }
         span {
           padding: 0 14px;
+          @include max-screen(1200px) {
+            padding: 0 3px;
+          }
         }
       }
     }
@@ -120,6 +129,9 @@ $border-radius: 4px;
     padding: 8px 20px;
     font-size: 13px;
     margin-right: 26px;
+    @include max-screen(1200px) {
+      margin-right: 10px;
+    }
     &:nth-child(3) {
       margin-right: 0;
     }
@@ -129,7 +141,7 @@ $border-radius: 4px;
     //   &:nth-child(1),
     //   &:nth-child(3) {
     //     &::after {
-          
+
     //       content: "";
     //       width: 27px;
     //       height: 27px;
@@ -148,34 +160,43 @@ $border-radius: 4px;
   }
   .order-menu {
     .fa-search {
-      font-size: 20px;
+      font-size: 28px;
     }
   }
   .categories-menu {
     margin-bottom: 28px;
     button {
       margin-right: 15px;
+      padding: 14px 20px;
+      @include max-screen(1200px) {
+        padding: 10px 12px;
+      }
       &:nth-last-child(1) {
         margin-right: 0;
+        padding: 9px;
+        @include max-screen(1200px) {
+          padding: 6px;
+        }
       }
     }
   }
-  .specific-position {
+
+  .position-item {
+    // margin-right: 19px;
+    // &:nth-child(3n+3) {
+    //   margin-right: 0;
+    // }
     display: inline-block;
-    .position-item {
-      // margin-right: 19px;
-      // &:nth-child(3n+3) {
-      //   margin-right: 0;
-      // }
-      display: inline-block !important;
-      margin-bottom: 28px;
-      background-color: #fff;
-      border: solid 1px $gray-text-color;
-      border-radius: $border-radius;
-      p {
-        text-align: center;
-        margin-top: 7px;
-      }
+    margin-bottom: 28px;
+    background-color: #fff;
+    border: $border;
+    border-radius: $border-radius;
+    p {
+      text-align: center;
+      margin-top: 7px;
+    }
+    img {
+      width: 100%;
     }
   }
 }
