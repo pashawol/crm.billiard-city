@@ -43,13 +43,14 @@
     .s-order .order-priсe tr:nth-last-of-type(1) {
       border-bottom: none; }
     .s-order .order-priсe tr td {
+      border-top: none;
       vertical-align: middle; }
       .s-order .order-priсe tr td:nth-child(1) {
         padding-left: 19px; }
-      .s-order .order-priсe tr td:nth-child(2), .s-order .order-priсe tr td:nth-child(3) {
-        width: 20%;
+      .s-order .order-priсe tr td:nth-child(3) {
         text-align: center; }
       .s-order .order-priсe tr td:nth-child(2) {
+        text-align: center;
         width: 91px; }
       .s-order .order-priсe tr td:nth-last-of-type(1) {
         text-align: right;
@@ -61,15 +62,19 @@
             padding: 0 3px; } }
   .s-order .order-final-priсe tr {
     padding: 7px 19px; }
+    .s-order .order-final-priсe tr:nth-child(1) {
+      border-top: 1px solid #c3c3c3; }
     .s-order .order-final-priсe tr:nth-child(2) {
       vertical-align: bottom; }
-    .s-order .order-final-priсe tr td:nth-child(1) {
-      padding-left: 19px; }
-    .s-order .order-final-priсe tr td:nth-child(2) {
-      text-align: center; }
-    .s-order .order-final-priсe tr td:nth-child(3) {
-      text-align-last: right;
-      padding-right: 19px; }
+    .s-order .order-final-priсe tr td {
+      border-top: none; }
+      .s-order .order-final-priсe tr td:nth-child(1) {
+        padding-left: 19px; }
+      .s-order .order-final-priсe tr td:nth-child(2) {
+        text-align: center; }
+      .s-order .order-final-priсe tr td:nth-child(3) {
+        text-align-last: right;
+        padding-right: 19px; }
   .s-order .order-final-priсe .total-price {
     font-size: 18px;
     font-weight: 600; }
@@ -139,10 +144,15 @@
     background-color: #fff;
     border: 1px solid #c3c3c3;
     border-radius: 4px; }
+    @media screen and (max-width: 992px) {
+      .s-order .position-item {
+        max-width: calc(100%/2 - 10px); } }
     .s-order .position-item p {
       text-align: center;
-      margin-top: 7px;
-      margin-bottom: 10px; }
+      padding-top: 7px;
+      padding-bottom: 10px;
+      padding-left: 6px;
+      padding-right: 6px; }
     .s-order .position-item img {
       width: 100%;
       margin-top: auto; }
