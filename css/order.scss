@@ -6,6 +6,7 @@ $border-radius: 4px;
 $border: 1px solid $gray-text-color;
 $fz-16: 16px;
 $fz-17: 17px;
+$h1-fz: 31px;
 
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
@@ -32,7 +33,7 @@ $fz-17: 17px;
   h1 {
     padding-top: 2px;
     // letter-spacing: 2;
-    font-size: 31px;
+    font-size: $h1-fz;
     font-weight: 600;
     padding-left: 21px;
     padding-bottom: 27px;
