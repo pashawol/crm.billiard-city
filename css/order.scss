@@ -4,6 +4,8 @@ $hover-blue-color: #367fa9;
 $orange-color: #ec971f;
 $border-radius: 4px;
 $border: 1px solid $gray-text-color;
+$fz-16: 16px;
+$fz-17: 17px;
 
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
@@ -17,6 +19,7 @@ $border: 1px solid $gray-text-color;
 }
 
 .s-order {
+  font-size: $fz-16;
   margin-left: 0;
   margin-right: 0;
   max-width: 1148px;
@@ -27,11 +30,23 @@ $border: 1px solid $gray-text-color;
     }
   }
   h1 {
+    padding-top: 2px;
+    // letter-spacing: 2;
+    font-size: 31px;
+    font-weight: 600;
     padding-left: 21px;
-    margin-bottom: 50px;
+    padding-bottom: 27px;
     // @media (max-width: @screen-sm-max) {
     //   margin-bottom: 0;
     // }
+  }
+  .left-side-block, .order-menu {
+    @include min-screen(1300px) {
+      min-width: 590px;
+    }
+  }
+  .order-number {
+    min-height: 441px;
   }
   .total-order,
   .order-number {
@@ -41,11 +56,17 @@ $border: 1px solid $gray-text-color;
     width: 100%;
     margin-bottom: 29px;
   }
+  .total-order {
+    margin-bottom: 10px;
+  }
   .textarea-wrapper {
     padding: 28px 20px;
+    padding-bottom: 20px;
     .wishes-to-order {
       // margin: 28px 20px;
       padding: 9px;
+      padding-top: 4px;
+      letter-spacing: 0.2px;
       width: 100%;
       height: 100px;
       resize: none;
@@ -62,6 +83,7 @@ $border: 1px solid $gray-text-color;
       // text-align: center;
       border-top: $border;
       border-bottom: $border;
+
       &:nth-child(1) {
         border-top: none;
         font-weight: 600;
@@ -72,23 +94,26 @@ $border: 1px solid $gray-text-color;
       td {
         border-top: none;
         vertical-align: middle;
+        line-height: 28px;
         &:nth-child(1) {
+          width: 42%;
           padding-left: 19px;
-        }
-        &:nth-child(3) {
-          // width: 20%;
-          text-align: center;
         }
         &:nth-child(2) {
           text-align: center;
           width: 91px;
         }
+        &:nth-child(3) {
+          width: 20%;
+          text-align: center;
+        }
         &:nth-last-of-type(1) {
+          width: 17%;
           text-align: right;
           padding-right: 19px;
         }
         span {
-          padding: 0 10px;
+          padding: 0 15px;
           @include max-screen(1200px) {
             padding: 0 3px;
           }
@@ -99,19 +124,18 @@ $border: 1px solid $gray-text-color;
   .block-add {
     display: flex;
     input {
-
     }
   }
   .order-final-priсe {
+    margin-bottom: 10px;
     tr {
       padding: 7px 19px;
       &:nth-child(1) {
         border-top: $border;
       }
-      &:nth-child(2) {
-        vertical-align: bottom;
-      }
       td {
+        width: 33.3%;
+        line-height: 30px;
         border-top: none;
         &:nth-child(1) {
           padding-left: 19px;
@@ -120,24 +144,25 @@ $border: 1px solid $gray-text-color;
           text-align: center;
         }
         &:nth-child(3) {
-          text-align-last: right;
+          text-align: right;
           padding-right: 19px;
         }
       }
     }
     .total-price {
-      font-size: 18px;
+      font-size: 23px;
       font-weight: 600;
     }
   }
 
   .to-pay {
-    margin: 0 20px 28px;
+    margin: 0 20px 15px;
     @include max-screen(469px) {
       text-align: center;
     }
     .btn-warning {
-      padding: 11px 17px;
+      font-size: $fz-17;
+      padding: 11px 22px;
       @include max-screen(1199px) {
         float: none !important;
         margin-left: auto;
@@ -181,12 +206,7 @@ $border: 1px solid $gray-text-color;
     // }
   }
 
-  
-  // .order-menu {
-  //   .fa-search {
-  //     font-size: 28px;
-  //   }
-  // }
+
   .categories-menu {
     margin-bottom: 18px;
     .btn-primary {
@@ -198,15 +218,16 @@ $border: 1px solid $gray-text-color;
     }
     button {
       margin-bottom: 10px;
-      @include max-screen(446px) {
+      font-size: $fz-17;
+      @include max-screen(492px) {
         &:nth-child(2),
         &:nth-child(3) {
           display: none;
         }
       }
       text-decoration: underline;
-      margin-right: 15px;
-      padding: 14px 20px;
+      margin-right: 14px;
+      padding: 11px 19px;
       @include max-screen(1200px) {
         padding: 8px 10px;
       }
@@ -227,25 +248,26 @@ $border: 1px solid $gray-text-color;
   .position-item {
     display: flex;
     flex-direction: column;
-    // margin-right: 10px;
     min-width: 120px;
-    width: calc(100%/3 - 10px);
+    width: calc(100% / 3 - 10px);
     @include max-screen(992px) {
-      width: calc(100%/2 - 10px);
+      width: calc(100% / 2 - 10px);
     }
-    margin-bottom: 28px;
+    margin-bottom: 22px;
     background-color: #fff;
     border: $border;
     border-radius: $border-radius;
     p {
       text-align: center;
-      padding-top: 7px;
-      padding-bottom: 10px;
+      padding-top: 9px;
+      line-height: 10px;
+      // padding-bottom: 1px;
+
       padding-left: 6px;
       padding-right: 6px;
-
     }
     img {
+      border-top: $border;
       width: 100%;
       // height: 100%;
       margin-top: auto;
