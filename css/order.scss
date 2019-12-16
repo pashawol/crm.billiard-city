@@ -21,8 +21,9 @@ $fz-12: 12px;
 }
 
 .s-order {
+  margin-top: 13px;
   font-size: $fz-12;
-  @include min-screen(480px) {
+  @include min-screen(768px) {
     font-size: $fz-16;
   }
   margin-left: 0;
@@ -47,7 +48,7 @@ $fz-12: 12px;
   }
   .left-side-block,
   .order-menu {
-    @include min-screen(1300px) {
+    @include min-screen(1400px) {
       min-width: 590px;
     }
   }
@@ -84,8 +85,9 @@ $fz-12: 12px;
     overflow-x: auto;
   }
   .order-priсe {
+    min-width: 340px;
     .btn-warning {
-      padding: 0 8px;
+      padding: 0 10px;
     }
     tr {
       // padding: 7px 19px;
