@@ -1,9 +1,12 @@
 @charset "UTF-8";
 .s-order {
-  font-size: 16px;
+  font-size: 12px;
   margin-left: 0;
   margin-right: 0;
   max-width: 1148px; }
+  @media screen and (min-width: 480px) {
+    .s-order {
+      font-size: 16px; } }
   .s-order .flex-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -21,7 +24,8 @@
     padding-left: 21px;
     padding-bottom: 27px; }
   @media screen and (min-width: 1300px) {
-    .s-order .left-side-block, .s-order .order-menu {
+    .s-order .left-side-block,
+    .s-order .order-menu {
       min-width: 590px; } }
   .s-order .order-number {
     min-height: 441px; }
@@ -46,6 +50,8 @@
       resize: none;
       border-radius: 4px;
       border: 1px solid #c3c3c3; }
+  .s-order .table-wrapper {
+    overflow-x: auto; }
   .s-order .order-priсe .btn-warning {
     padding: 0 8px; }
   .s-order .order-priсe tr {
@@ -62,26 +68,37 @@
       line-height: 28px; }
       .s-order .order-priсe tr td:nth-child(1) {
         width: 42%;
-        padding-left: 19px; }
+        padding-left: 15px; }
+        @media screen and (min-width: 480px) {
+          .s-order .order-priсe tr td:nth-child(1) {
+            padding-left: 19px; } }
       .s-order .order-priсe tr td:nth-child(2) {
-        text-align: center;
-        width: 91px; }
-      .s-order .order-priсe tr td:nth-child(3) {
-        width: 20%;
         text-align: center; }
+      .s-order .order-priсe tr td:nth-child(3) {
+        width: 12%;
+        text-align: center; }
+        @media screen and (min-width: 992px) {
+          .s-order .order-priсe tr td:nth-child(3) {
+            width: 20%; } }
       .s-order .order-priсe tr td:nth-last-of-type(1) {
         width: 17%;
         text-align: right;
-        padding-right: 19px; }
+        padding-right: 15px; }
+        @media screen and (min-width: 480px) {
+          .s-order .order-priсe tr td:nth-last-of-type(1) {
+            padding-right: 19px; } }
       .s-order .order-priсe tr td span {
-        padding: 0 15px; }
-        @media screen and (max-width: 1200px) {
+        padding: 0 4px; }
+        @media screen and (min-width: 1090px) {
           .s-order .order-priсe tr td span {
-            padding: 0 3px; } }
+            padding: 0 15px; } }
   .s-order .block-add {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .s-order .order-final-priсe {
     margin-bottom: 10px; }
     .s-order .order-final-priсe tr {
@@ -122,11 +139,11 @@
     color: #fff;
     padding: 8px 20px;
     font-size: 13px;
-    margin-right: 26px;
-    margin-bottom: 15px; }
-    @media screen and (max-width: 1200px) {
+    margin-bottom: 15px;
+    margin-right: 10px; }
+    @media screen and (min-width: 1200px) {
       .s-order .pay-check {
-        margin-right: 10px; } }
+        margin-right: 26px; } }
   .s-order .categories-menu {
     margin-bottom: 18px; }
     .s-order .categories-menu .btn-primary {
@@ -138,19 +155,19 @@
       font-size: 17px;
       text-decoration: underline;
       margin-right: 14px;
-      padding: 11px 19px; }
+      padding: 8px 10px; }
       @media screen and (max-width: 492px) {
         .s-order .categories-menu button:nth-child(2), .s-order .categories-menu button:nth-child(3) {
           display: none; } }
-      @media screen and (max-width: 1200px) {
+      @media screen and (min-width: 1200px) {
         .s-order .categories-menu button {
-          padding: 8px 10px; } }
+          padding: 11px 19px; } }
       .s-order .categories-menu button:nth-last-child(1) {
         margin-right: 0;
-        padding: 9px; }
-        @media screen and (max-width: 1200px) {
+        padding: 4px; }
+        @media screen and (min-width: 1200px) {
           .s-order .categories-menu button:nth-last-child(1) {
-            padding: 4px; } }
+            padding: 9px; } }
   .s-order .right-site-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -169,14 +186,14 @@
     -ms-flex-direction: column;
     flex-direction: column;
     min-width: 120px;
-    width: calc(100% / 3 - 10px);
+    width: calc(100% / 2 - 10px);
     margin-bottom: 21px;
     background-color: #fff;
     border: 1px solid #c3c3c3;
     border-radius: 4px; }
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 992px) {
       .s-order .position-item {
-        width: calc(100% / 2 - 10px); } }
+        width: calc(100% / 3 - 10px); } }
     .s-order .position-item p {
       text-align: center;
       padding-top: 6px;
