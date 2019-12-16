@@ -273,6 +273,8 @@ $fz-12: 12px;
     border: $border;
     border-radius: $border-radius;
     p {
+      padding-left: 5px;
+      padding-right: 5px;
       text-align: center;
       padding-top: 6px;
       margin-bottom: 2px;
